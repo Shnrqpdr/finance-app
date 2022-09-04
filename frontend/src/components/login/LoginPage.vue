@@ -9,9 +9,14 @@
         ></v-text-field>
         <v-text-field v-model="password" label="Senha"></v-text-field>
       </v-col>
-      <v-btn class="ma-2" color="#0a0e5098" @click="login()">
-        Login <v-icon right> mdi-arrow-right </v-icon>
-      </v-btn>
+      <v-col cols="12" sm="10">
+        <v-flex class="botoes">
+          <div>Esqueci minha senha</div>
+          <v-btn class="ma-2" color="#0a0e5098" @click="login()">
+            Entrar <v-icon right> mdi-arrow-right </v-icon>
+          </v-btn>
+        </v-flex>
+      </v-col>
     </v-row>
   </v-container>
 </template>
@@ -40,7 +45,7 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style lang="scss" scoped>
 .fields-login {
   width: 100%;
   height: 100%;
@@ -50,5 +55,17 @@ export default {
   height: 100%;
   justify-content: center;
   align-items: center;
+}
+
+.botoes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  div {
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
 }
 </style>

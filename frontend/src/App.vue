@@ -17,8 +17,4 @@ export default {
 .background {
   background-color: #0a0e5098;
 }
-
-.dark-mode {
-  cursor: pointer;
-}
 </style>
