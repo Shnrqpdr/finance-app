@@ -1,15 +1,13 @@
 <template>
-  <div>
-    <Bar
-      :chart-options="chartOptions"
-      :chart-data="chartData"
-      :chart-id="chartId"
-      :dataset-id-key="datasetIdKey"
-      :plugins="plugins"
-      :css-classes="cssClasses"
-      :styles="myStyles"
-    />
-  </div>
+  <Bar
+    :chart-options="chartOptions"
+    :chart-data="chartData"
+    :chart-id="chartId"
+    :dataset-id-key="datasetIdKey"
+    :plugins="plugins"
+    :css-classes="cssClasses"
+    :styles="myStyles"
+  />
 </template>
 <script>
 import { Bar } from "vue-chartjs/legacy";
@@ -99,6 +97,7 @@ export default {
       },
       chartOptions: {
         responsive: true,
+        maintainAspectRatio: false,
         scales: {
           y: {
             beginAtZero: true,
@@ -111,6 +110,8 @@ export default {
     myStyles() {
       return {
         position: "relative",
+        height: "100%",
+        width: "100%",
       };
     },
   },

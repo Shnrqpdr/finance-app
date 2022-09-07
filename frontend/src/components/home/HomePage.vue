@@ -22,7 +22,7 @@
         </v-navigation-drawer>
       </v-col>
       <v-col cols="10" xl="10" xs="8" class="mb-4">
-        <v-sheet rounded="lg">
+        <v-sheet rounded="lg" height="50vh" class="pa-5">
           <principal-finances />
         </v-sheet>
       </v-col>
