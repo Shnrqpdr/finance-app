@@ -16,13 +16,15 @@
     </v-app-bar>
 
     <v-row class="text-center">
-      <v-col cols="4">
-        <v-navigation-drawer permanent>
+      <v-col cols="2" xl="2" xs="4">
+        <v-navigation-drawer height="50vh" permanent expand-on-hover>
           <profile />
         </v-navigation-drawer>
       </v-col>
-      <v-col cols="8" class="mb-4">
-        <v-sheet height="50vh" rounded="lg"></v-sheet>
+      <v-col cols="10" xl="10" xs="8" class="mb-4">
+        <v-sheet rounded="lg">
+          <principal-finances />
+        </v-sheet>
       </v-col>
     </v-row>
   </v-container>
@@ -30,11 +32,13 @@
 
 <script>
 import Profile from "./Profile";
+import PrincipalFinances from "./PrincipalFinances";
 
 export default {
   name: "HomePage",
   components: {
     Profile,
+    PrincipalFinances,
   },
 
   data: () => ({}),

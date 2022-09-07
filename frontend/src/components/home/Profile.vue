@@ -1,21 +1,15 @@
 <template>
-  <v-container>
+  <div>
     <v-list>
-      <v-list-item>
+      <v-list-item two-line class="px-2">
         <v-list-item-avatar>
-          <v-img src="https://cdn.vuetifyjs.com/images/john.png"></v-img>
+          <img src="https://randomuser.me/api/portraits/women/81.jpg" />
         </v-list-item-avatar>
-      </v-list-item>
 
-      <v-list-item link>
         <v-list-item-content>
-          <v-list-item-title class="text-h6"> John Leider </v-list-item-title>
-          <v-list-item-subtitle>john@vuetifyjs.com</v-list-item-subtitle>
+          <v-list-item-title>Jane Smith</v-list-item-title>
+          <v-list-item-subtitle>Logged In</v-list-item-subtitle>
         </v-list-item-content>
-
-        <v-list-item-action>
-          <v-icon>mdi-menu-down</v-icon>
-        </v-list-item-action>
       </v-list-item>
     </v-list>
     <v-divider></v-divider>
@@ -32,7 +26,7 @@
         </v-list-item>
       </v-list-item-group>
     </v-list>
-  </v-container>
+  </div>
 </template>
 <script>
 export default {
