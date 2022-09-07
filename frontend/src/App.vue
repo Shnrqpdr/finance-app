@@ -17,4 +17,8 @@ export default {
 .background {
   background-color: #0a0e5098;
 }
+
+.container {
+  height: 100%;
+}
 </style>

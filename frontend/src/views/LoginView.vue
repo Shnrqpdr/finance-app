@@ -20,7 +20,7 @@
       >
     </v-app-bar>
     <v-row class="row-card-login">
-      <v-col cols="12" sm="6">
+      <v-col cols="12" sm="6" xs="12" lg="4">
         <v-sheet height="50vh" rounded="lg">
           <login-page />
         </v-sheet>
